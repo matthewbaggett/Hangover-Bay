@@ -16,13 +16,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'hangoverbay');
+define('DB_NAME', $_ENV['THRUIO_ENV_MYSQL_DATABASE']);
 
 /** MySQL database username */
-define('DB_USER', $_ENV['MYSQL_ENV_MYSQL_USER']);
+define('DB_USER', $_ENV['THRUIO_ENV_MYSQL_USER']);
 
 /** MySQL database password */
-define('DB_PASSWORD', $_ENV['MYSQL_1_ENV_MYSQL_PASS']);
+define('DB_PASSWORD', $_ENV['THRUIO_ENV_MYSQL_PASS']);
 
 /** MySQL hostname */
 define('DB_HOST', $_ENV['MYSQL_1_ENV_TUTUM_SERVICE_FQDN']);
